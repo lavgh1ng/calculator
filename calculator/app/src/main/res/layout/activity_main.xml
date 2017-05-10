@@ -10,14 +10,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.administrator.calculator.MainActivity">
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:id="@+id/input"
+        android:layout_height="65dp"
+        android:id="@+id/top_text"
         android:background="@null"
         android:textCursorDrawable="@null"
         android:textSize="50dp"
+        android:gravity="right|bottom"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/bottom_text"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:textSize="50dp"
         android:gravity="right|bottom"/>
 
     <LinearLayout
@@ -29,7 +37,8 @@
             android:layout_height="80dp"
             android:id="@+id/delete_all"
             android:layout_weight="1"
-            android:text="@string/delete_all"/>
+            android:text="@string/delete_all"
+            android:textColor="@android:color/white"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="80dp"
@@ -175,7 +184,7 @@
                 android:layout_height="160dp"
                 android:id="@+id/button_equal"
                 android:layout_weight="1"
-                android:text="@string/button_equal"/>
+                android:text="@string/button_equal" />
         </LinearLayout>
     </LinearLayout>
 
